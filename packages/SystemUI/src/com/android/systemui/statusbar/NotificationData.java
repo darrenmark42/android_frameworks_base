@@ -16,11 +16,21 @@
 
 package com.android.systemui.statusbar;
 
+<<<<<<< HEAD
 import android.service.notification.StatusBarNotification;
+=======
+import android.app.Notification;
+import android.graphics.Bitmap;
+>>>>>>> 518c329... HALO (1/2)
 import android.os.IBinder;
 import android.view.View;
 import android.widget.ImageView;
 
+<<<<<<< HEAD
+=======
+import com.android.systemui.statusbar.BaseStatusBar.NotificationClicker;
+import com.android.internal.statusbar.StatusBarNotification;
+>>>>>>> 518c329... HALO (1/2)
 import com.android.systemui.R;
 
 import java.util.Comparator;
@@ -38,12 +48,21 @@ public class NotificationData {
         public View content; // takes the click events and sends the PendingIntent
         public View expanded; // the inflated RemoteViews
         public ImageView largeIcon;
+        protected boolean hide = false;
+        protected Bitmap roundIcon;
         protected View expandedLarge;
+        protected NotificationClicker floatingIntent;
         public Entry() {}
         public Entry(IBinder key, StatusBarNotification n, StatusBarIconView ic) {
             this.key = key;
             this.notification = n;
             this.icon = ic;
+        }
+        public Entry(IBinder key, StatusBarNotification n, StatusBarIconView ic, Bitmap ri) {
+            this.key = key;
+            this.notification = n;
+            this.icon = ic;
+            this.roundIcon = ri;
         }
         public void setLargeView(View expandedLarge) {
             this.expandedLarge = expandedLarge;
@@ -51,6 +70,12 @@ public class NotificationData {
         }
         public View getLargeView() {
             return expandedLarge;
+        }
+        public NotificationClicker getFloatingIntent() {
+            return floatingIntent;
+        }
+        public Bitmap getRoundIcon() {
+            return roundIcon;
         }
         /**
          * Return whether the entry can be expanded.
