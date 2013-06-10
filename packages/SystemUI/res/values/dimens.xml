@@ -248,5 +248,10 @@
 =======
     <dimen name="halo_content_max_width">250dp</dimen>
 
+<<<<<<< HEAD
+>>>>>>> 518c329... HALO (1/2)
+=======
+    <dimen name="halo_content_max_width">250dp</dimen>
+
 >>>>>>> 518c329... HALO (1/2)
 </resources>

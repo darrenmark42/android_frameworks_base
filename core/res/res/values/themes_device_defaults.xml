@@ -500,6 +500,10 @@ easier.
     the window floating, with a transparent background, and turns off dimming behind the window. -->
     <style name="Theme.DeviceDefault.Panel" parent="Theme.Holo.Panel" >
     </style>
+<<<<<<< HEAD
+
+    <style name="Theme.DeviceDefault.FloatingWindow">
+=======
 
     <style name="Theme.DeviceDefault.FloatingWindow">
         <item name="android:windowIsFloating">false</item>
@@ -514,6 +518,7 @@ easier.
     </style>
 
     <style name="Theme.DeviceDefault.FloatingWindowLight" parent="Theme.Holo.Light.Dialog">
+>>>>>>> 518c329... HALO (1/2)
         <item name="android:windowIsFloating">false</item>
         <item name="android:windowIsTranslucent">true</item>
         <item name="android:windowFrame">@null</item>
@@ -525,6 +530,21 @@ easier.
         <item name="android:windowSoftInputMode">stateAlwaysHidden|adjustPan</item>
     </style>
 
+<<<<<<< HEAD
+    <style name="Theme.DeviceDefault.FloatingWindowLight" parent="Theme.Holo.Light.Dialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowSoftInputMode">stateAlwaysHidden|adjustPan</item>
+    </style>
+
+=======
+>>>>>>> 518c329... HALO (1/2)
     <!-- DeviceDefault light theme for panel windows. This removes all extraneous window
     decorations, so you basically have an empty rectangle in which to place your content. It makes
     the window floating, with a transparent background, and turns off dimming behind the window. -->

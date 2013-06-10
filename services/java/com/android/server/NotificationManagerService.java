@@ -226,6 +226,7 @@ public class NotificationManagerService extends INotificationManager.Stub
     private static final String ATTR_NAME = "name";
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private class NotificationListenerInfo implements DeathRecipient {
         INotificationListener listener;
         ComponentName component;
@@ -408,6 +409,11 @@ public class NotificationManagerService extends INotificationManager.Stub
                 mPolicyFile = new AtomicFile(new File(dir, "notification_policy.xml"));
 
                 mBlockedPackages.clear();
+=======
+    private int readPolicy(AtomicFile file, String lookUpTag, HashSet<String> db) {
+        return readPolicy(file, lookUpTag, db, null, 0);
+    }
+>>>>>>> 518c329... HALO (1/2)
 =======
     private int readPolicy(AtomicFile file, String lookUpTag, HashSet<String> db) {
         return readPolicy(file, lookUpTag, db, null, 0);
@@ -1556,6 +1562,9 @@ public class NotificationManagerService extends INotificationManager.Stub
 =======
         loadBlockDb();
         loadHaloBlockDb();
+<<<<<<< HEAD
+>>>>>>> 518c329... HALO (1/2)
+=======
 >>>>>>> 518c329... HALO (1/2)
 
         mStatusBar = statusBar;

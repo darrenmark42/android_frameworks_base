@@ -59,6 +59,9 @@ import android.util.EventLog;
 =======
 import android.util.ExtendedPropertiesUtils;
 import android.util.DisplayMetrics;
+<<<<<<< HEAD
+>>>>>>> 518c329... HALO (1/2)
+=======
 >>>>>>> 518c329... HALO (1/2)
 import android.util.Log;
 import android.util.TypedValue;

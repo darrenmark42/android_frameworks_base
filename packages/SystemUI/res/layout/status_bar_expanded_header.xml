@@ -96,7 +96,11 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
 <<<<<<< HEAD
+<<<<<<< HEAD
         android:layout_marginStart="12dp"
+=======
+        android:layout_marginLeft="5dp"
+>>>>>>> 518c329... HALO (1/2)
 =======
         android:layout_marginLeft="5dp"
 >>>>>>> 518c329... HALO (1/2)

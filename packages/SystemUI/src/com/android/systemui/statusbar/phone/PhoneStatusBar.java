@@ -240,6 +240,10 @@ public class PhoneStatusBar extends BaseStatusBar {
     // top bar
     View mNotificationPanelHeader;
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    View mDateTimeView;
+>>>>>>> 518c329... HALO (1/2)
 =======
     View mDateTimeView;
 >>>>>>> 518c329... HALO (1/2)
@@ -1341,8 +1345,13 @@ public class PhoneStatusBar extends BaseStatusBar {
         for (int i=0; i<N; i++) {
             Entry ent = mNotificationData.get(N-i-1);
 <<<<<<< HEAD
+<<<<<<< HEAD
             if (!((provisioned && ent.notification.getScore() >= HIDE_ICONS_BELOW_SCORE)
                     || showNotificationEvenIfUnprovisioned(ent.notification))) continue;
+=======
+            if (!((provisioned && ent.notification.score >= HIDE_ICONS_BELOW_SCORE)
+                    || showNotificationEvenIfUnprovisioned(ent.notification) || mHaloTaskerActive)) continue;
+>>>>>>> 518c329... HALO (1/2)
 =======
             if (!((provisioned && ent.notification.score >= HIDE_ICONS_BELOW_SCORE)
                     || showNotificationEvenIfUnprovisioned(ent.notification) || mHaloTaskerActive)) continue;
@@ -1771,7 +1780,11 @@ public class PhoneStatusBar extends BaseStatusBar {
 
     Animator mScrollViewAnim, mFlipSettingsViewAnim, mNotificationButtonAnim,
 <<<<<<< HEAD
+<<<<<<< HEAD
         mSettingsButtonAnim, mClearButtonAnim, mRibbonViewAnim;
+=======
+        mSettingsButtonAnim, mHaloButtonAnim, mClearButtonAnim;
+>>>>>>> 518c329... HALO (1/2)
 =======
         mSettingsButtonAnim, mHaloButtonAnim, mClearButtonAnim;
 >>>>>>> 518c329... HALO (1/2)
@@ -2861,9 +2874,12 @@ public class PhoneStatusBar extends BaseStatusBar {
     };
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     private final View.OnClickListener mNotificationButtonListener = new View.OnClickListener() {
         @Override
 =======
+=======
+>>>>>>> 518c329... HALO (1/2)
     private View.OnClickListener mHaloButtonListener = new View.OnClickListener() {
         public void onClick(View v) {
             // Activate HALO

@@ -133,6 +133,10 @@ final class ActivityRecord {
     boolean newTask;
     boolean floatingWindow;
 
+    boolean topIntent;
+    boolean newTask;
+    boolean floatingWindow;
+
     String stringName;      // for caching of toString().
     
     private boolean inHistory;  // are we in the history stack?
@@ -469,10 +473,13 @@ final class ActivityRecord {
             packageName = aInfo.applicationInfo.packageName;
             launchMode = aInfo.launchMode;
 <<<<<<< HEAD
+<<<<<<< HEAD
             
             AttributeCache.Entry ent = AttributeCache.instance().get(packageName,
                     realTheme, com.android.internal.R.styleable.Window, userId);
 =======
+=======
+>>>>>>> 518c329... HALO (1/2)
 
             AttributeCache.Entry ent = AttributeCache.instance().get(userId, packageName,
                     realTheme, com.android.internal.R.styleable.Window);

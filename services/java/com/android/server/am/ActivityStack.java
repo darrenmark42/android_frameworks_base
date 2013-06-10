@@ -1954,10 +1954,13 @@ final class ActivityStack {
                 mNoAnimActivities.add(r);
             } else {
 <<<<<<< HEAD
+<<<<<<< HEAD
                 mService.mWindowManager.prepareAppTransition(newTask
                         ? AppTransition.TRANSIT_TASK_OPEN
                         : AppTransition.TRANSIT_ACTIVITY_OPEN, keepCurTransition);
 =======
+=======
+>>>>>>> 518c329... HALO (1/2)
                 mService.mWindowManager.prepareAppTransition(newTask && !r.floatingWindow
                         ? WindowManagerPolicy.TRANSIT_TASK_OPEN
                         : WindowManagerPolicy.TRANSIT_ACTIVITY_OPEN, keepCurTransition);
@@ -3888,10 +3891,13 @@ final class ActivityStack {
             if (DEBUG_TRANSITION) Slog.v(TAG,
                     "Prepare close transition: finishing " + r);
 <<<<<<< HEAD
+<<<<<<< HEAD
             mService.mWindowManager.prepareAppTransition(endTask
                     ? AppTransition.TRANSIT_TASK_CLOSE
                     : AppTransition.TRANSIT_ACTIVITY_CLOSE, false);
 =======
+=======
+>>>>>>> 518c329... HALO (1/2)
             mService.mWindowManager.prepareAppTransition(endTask && !r.floatingWindow
                     ? WindowManagerPolicy.TRANSIT_TASK_CLOSE
                     : WindowManagerPolicy.TRANSIT_ACTIVITY_CLOSE, false);

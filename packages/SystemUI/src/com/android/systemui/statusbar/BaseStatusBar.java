@@ -58,6 +58,9 @@ import android.graphics.PixelFormat;
 import android.graphics.PorterDuff;
 import android.graphics.PorterDuff.Mode;
 import android.graphics.PorterDuffXfermode;
+<<<<<<< HEAD
+>>>>>>> 518c329... HALO (1/2)
+=======
 >>>>>>> 518c329... HALO (1/2)
 import android.graphics.Rect;
 import android.net.Uri;
@@ -248,6 +251,10 @@ public abstract class BaseStatusBar extends SystemUI implements
 <<<<<<< HEAD
     private int mAutoCollapseBehaviour;
 =======
+
+    public Ticker getTicker() {
+        return mTicker;
+    }
 
     public Ticker getTicker() {
         return mTicker;
@@ -1401,6 +1408,7 @@ public abstract class BaseStatusBar extends SystemUI implements
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     protected void maybeCollapseAfterNotificationRemoval(boolean userDismissed) {
         if (mAutoCollapseBehaviour == Settings.System.STATUS_BAR_COLLAPSE_NEVER) {
             return;
@@ -1424,6 +1432,8 @@ public abstract class BaseStatusBar extends SystemUI implements
             mHandler.postDelayed(mPanelCollapseRunnable, COLLAPSE_AFTER_REMOVE_DELAY);
         }
 =======
+=======
+>>>>>>> 518c329... HALO (1/2)
     private Bitmap createRoundIcon(StatusBarNotification notification) {
         // Construct the round icon
         BitmapDrawable bd = (BitmapDrawable) mContext.getResources().getDrawable(R.drawable.halo_bg);
@@ -1457,6 +1467,9 @@ public abstract class BaseStatusBar extends SystemUI implements
             }
         }
         return roundIcon;
+<<<<<<< HEAD
+>>>>>>> 518c329... HALO (1/2)
+=======
 >>>>>>> 518c329... HALO (1/2)
     }
 
@@ -1615,15 +1628,21 @@ public abstract class BaseStatusBar extends SystemUI implements
                 && notification.getScore() == oldNotification.getScore();
                 // score now encompasses/supersedes isOngoing()
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         boolean updateTicker = notification.getNotification().tickerText != null
                 && !TextUtils.equals(notification.getNotification().tickerText,
                         oldEntry.notification.getNotification().tickerText);
 =======
+=======
+>>>>>>> 518c329... HALO (1/2)
         
         boolean updateTicker = (notification.notification.tickerText != null
                 && !TextUtils.equals(notification.notification.tickerText,
                         oldEntry.notification.notification.tickerText)) || mHaloActive;
+<<<<<<< HEAD
+>>>>>>> 518c329... HALO (1/2)
+=======
 >>>>>>> 518c329... HALO (1/2)
         boolean isTopAnyway = isTopNotification(rowParent, oldEntry);
         if (contentsUnchanged && bigContentsUnchanged && (orderUnchanged || isTopAnyway)) {
@@ -1636,9 +1655,12 @@ public abstract class BaseStatusBar extends SystemUI implements
                     bigContentView.reapply(mContext, oldEntry.getLargeView(), mOnClickHandler);
                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
                 // update the contentIntent
                 final PendingIntent contentIntent = notification.getNotification().contentIntent;
 =======
+=======
+>>>>>>> 518c329... HALO (1/2)
                 // update contentIntent and floatingIntent
                 final PendingIntent contentIntent = notification.notification.contentIntent;
 >>>>>>> 518c329... HALO (1/2)

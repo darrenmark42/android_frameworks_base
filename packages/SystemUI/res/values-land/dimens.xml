@@ -45,5 +45,8 @@
 
     <dimen name="pie_panel_padding">100dp</dimen>
     <dimen name="halo_content_max_width">350dp</dimen>
+<<<<<<< HEAD
+>>>>>>> 518c329... HALO (1/2)
+=======
 >>>>>>> 518c329... HALO (1/2)
 </resources>

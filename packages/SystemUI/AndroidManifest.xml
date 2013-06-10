@@ -74,10 +74,15 @@
     <uses-permission android:name="android.permission.WRITE_DREAM_STATE" />
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     <!-- Power widget -->
     <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
     <uses-permission android:name="android.permission.READ_SYNC_SETTINGS" />
     <uses-permission android:name="android.permission.WRITE_SYNC_SETTINGS" />
+=======
+    <!--Halo-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+>>>>>>> 518c329... HALO (1/2)
 =======
     <!--Halo-->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>

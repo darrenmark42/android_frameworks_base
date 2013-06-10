@@ -21,13 +21,19 @@ import android.service.notification.StatusBarNotification;
 =======
 import android.app.Notification;
 import android.graphics.Bitmap;
+<<<<<<< HEAD
+>>>>>>> 518c329... HALO (1/2)
+=======
 >>>>>>> 518c329... HALO (1/2)
 import android.os.IBinder;
 import android.view.View;
 import android.widget.ImageView;
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> 518c329... HALO (1/2)
 import com.android.systemui.statusbar.BaseStatusBar.NotificationClicker;
 import com.android.internal.statusbar.StatusBarNotification;
 >>>>>>> 518c329... HALO (1/2)
